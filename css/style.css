@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+.icon-size{
+    font-size: 20px;
+ 
+}
+.item-list{
+    height: 56px;
+    background-color: #e1e9e9;
+    border-bottom: 1px solid #535353;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    display: flex;
+    flex: 10%;
+    justify-content: right;
+}
+.icon-news-list{
+    flex: 40%;
+}
+.more-list-icon{
+    flex: 10%;
+}
+.space-icon{
+    margin: 10px;
+}
+.search input[type="text"]{
+    height: 40px;
+    width: 235px;
+    border: 1px solid #CCC;
+    border-radius: 30px;
+}
+i.fa-brands.fa-facebook::before{
+    color: rgb(0, 110, 255);
+}
+.list-space-icon{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.button-icon-top{
+    background-color:#e1e9e9;
+    border: none;
+}
+.button-icon-top-right{
+    border-radius: 50%;
+    border: none;
+
+}
+.img-avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.main-screen{
+    display: flex;
+    justify-content: space-between;
+}
+.category{
+    flex: 10%;
+    background-color: rgb(4, 46, 46);
+    height: 100%;
+    
+}
+.news-feed{
+    flex: 40%;
+    background-color: bisque;
+    height: 100%;
+}
+.frend-list{
+    flex: 10%;
+    background-color: rgb(171, 211, 211);
+    height: 100%;
+
+}

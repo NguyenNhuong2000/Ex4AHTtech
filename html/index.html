@@ -5,6 +5,7 @@
     <title>Facebook</title>
     <link rel="icon" href="/images/icon.icon" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/test.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -58,13 +59,28 @@
             <li>
               <button class="button-icon-top-right" type="button">
                 <i class="fa-solid fa-bars icon-size space-icon"></i>
+                <ul class="subnav">
+                  <li><a href="">Setting</a></li>
+                  <li><a href="">Game</a></li>
+                  <li><a href="">Group</a></li>
+                </ul>
               </button>
             </li>
             <li>
-              <button class="button-icon-top-right" type="button">
+              <button class="button-icon-top-right cart-layout" type="button">
                 <i
                   class="fa-brands fa-facebook-messenger icon-size space-icon"
                 ></i>
+                <div class="header-cart-list">
+                  <img
+                    src="/images/nocart.jpg"
+                    alt=""
+                    class="header_no-cart-img"
+                  />
+                  <span class="header_no-cart-text">
+                    có gì đâu mà xem :))
+                  </span>
+                </div>
               </button>
             </li>
             <li>
@@ -80,11 +96,70 @@
           </ul>
         </div>
       </div>
+      <!--main center-->
       <div class="main-screen">
-        <div class="category">1</div>
-        <div class="news-feed">2</div>
-        <div class="frend-list">3</div>
+        <!--left-->
+        <div class="list-app-left">
+          <div class="list-social">
+            <i class="fa-solid fa-phone"></i>
+            <p class="name-text">Phone</p>
+          </div>
+          <div class="list-social">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="name-text">Envelope</p>
+          </div>
+          <div class="list-social">
+            <i class="fa-solid fa-gear"></i>
+            <p class="name-text">Setting</p>
+          </div>
+          <div class="list-social">
+            <i class="fa-solid fa-heart"></i>
+            <p class="name-text">My Heart</p>
+          </div>
+          <div class="list-social">
+            <i class="fa-solid fa-image"></i>
+            <p class="name-text">Images</p>
+          </div>
+        </div>
+        <!--center-->
+        <div class="news-feed">
+          <div>
+            <img src="/images/meomeo.jpg" alt="" class="test-scroll" />
+            <img src="/images/meomeo.jpg" alt="" class="test-scroll" />
+            <img src="/images/meomeo.jpg" alt="" class="test-scroll" />
+          </div>
+          <div class="list-app-right">
+            <div class="list-social">
+              <i class="fa-solid fa-location-dot icon-size"></i>
+            </div>
+            <div class="list-social">
+              <i class="fa-brands fa-google icon-size"></i>
+            </div>
+            <div class="list-social">
+              <i class="fa-brands fa-twitter icon-size"></i>
+            </div>
+            <div class="list-social">
+              <i class="fa-brands fa-instagram icon-size"></i>
+            </div>
+            <div class="list-social">
+              <i class="fa-brands fa-tiktok icon-size"></i>
+            </div>
+          </div>
+        </div>
+        <!--right-->
       </div>
     </div>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("item-list").style.top = "0";
+        } else {
+          document.getElementById("item-list").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+      </script>
   </body>
 </html>
